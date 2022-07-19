@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  padding: 25px;
+  background-color: white;
+}
+
+header h1 {
+  color: #24272E;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 35px;
+  padding: 15px 20px;
+  font-family: 'Permanent Marker', cursive;
+  position: relative;
+}
+
+.badge {
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  padding: 2px 10px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+
+.result {
+  font-size: 35px;
+  color: white;
+}
+
+.result>p {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.choices {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.choice {
+  border: 3px solid white;
+  border-radius: 40%;
+  margin: 0 20px;
+  padding: 15px;
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: darkgrey;
+}
+
+#action {
+  text-align: center;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+}

@@ -1,0 +1,113 @@
+body {
+  background-color: rosybrown;
+}
+
+div {
+  background-color: white;
+}
+
+.game {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#Pikachu {
+  width: 60px;
+  height: 60px;
+  background-image: url(images/pikachu.jpg);
+  background-size: 60px 60px;
+  position: relative;
+  top: 140px;
+  display: block;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 140px;
+  }
+
+  30% {
+    top: 100px;
+  }
+
+  50% {
+    top: 40px;
+  }
+
+  80% {
+    top: 100px;
+  }
+
+  100% {
+    top: 140px;
+  }
+}
+
+#pokeball {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 100px;
+  left: 580px;
+  background-image: url(https://image.flaticon.com/icons/png/128/188/188918.png);
+  background-size: 40px 40px;
+  animation: block 0.8s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+#clouds {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background-image: url(https://image.flaticon.com/icons/png/128/892/892300.png);
+  background-size: 60px 60px;
+  animation: move1 7s infinite linear;
+}
+
+@keyframes move1 {
+  0% {
+    right: 410px;
+  }
+
+  100% {
+    right: 880px;
+  }
+}
+
+#clouds2 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-image: url(https://image.flaticon.com/icons/png/128/892/892300.png);
+  background-size: 60px 60px;
+  animation: move2 10s infinite linear;
+}
+
+@keyframes move2 {
+  0% {
+    right: 350px;
+  }
+
+  100% {
+    right: 880px;
+  }
+}
